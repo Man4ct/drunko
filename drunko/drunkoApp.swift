@@ -2,7 +2,7 @@
 //  drunkoApp.swift
 //  drunko
 //
-//  Created by Fahmi Fahreza on 19/10/23.
+//  Created by Fahmi Fahreza on 17/10/23.
 //
 
 import SwiftUI
@@ -11,7 +11,18 @@ import SwiftUI
 struct drunkoApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            TabView {
+                AlienView()
+                    .tabItem {
+                        Label("Drinks", systemImage: "cup.and.saucer.fill")
+                    }
+                EmptyView()
+                    .tabItem {
+                        Label("Achievement", systemImage: "trophy.circle")
+                    }
+                
+            }
+
         }
     }
 }

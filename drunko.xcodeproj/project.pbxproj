@@ -7,24 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		583C79FB2AE1620B00F98F9D /* drunkoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 583C79FA2AE1620B00F98F9D /* drunkoApp.swift */; };
-		583C79FD2AE1620B00F98F9D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 583C79FC2AE1620B00F98F9D /* ContentView.swift */; };
-		583C79FF2AE1620C00F98F9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 583C79FE2AE1620C00F98F9D /* Assets.xcassets */; };
-		583C7A022AE1620C00F98F9D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 583C7A012AE1620C00F98F9D /* Preview Assets.xcassets */; };
-		583C7A092AE1621C00F98F9D /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 583C7A082AE1621C00F98F9D /* .gitignore */; };
+		587360A12ADEC91300A05D03 /* drunkoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587360A02ADEC91300A05D03 /* drunkoApp.swift */; };
+		587360A32ADEC91300A05D03 /* AlienView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587360A22ADEC91300A05D03 /* AlienView.swift */; };
+		587360A52ADEC91400A05D03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 587360A42ADEC91400A05D03 /* Assets.xcassets */; };
+		587360A82ADEC91400A05D03 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 587360A72ADEC91400A05D03 /* Preview Assets.xcassets */; };
+		587360AF2ADEC96600A05D03 /* Drink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587360AE2ADEC96600A05D03 /* Drink.swift */; };
+		587360B12ADEDADF00A05D03 /* Coffee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587360B02ADEDADF00A05D03 /* Coffee.swift */; };
+		587360B42ADEDE1700A05D03 /* Alcohol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587360B32ADEDE1700A05D03 /* Alcohol.swift */; };
+		587360B62ADEDE3200A05D03 /* Juice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587360B52ADEDE3200A05D03 /* Juice.swift */; };
+		587360B82ADEDE4D00A05D03 /* Water.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587360B72ADEDE4D00A05D03 /* Water.swift */; };
+		587360C32AE0360C00A05D03 /* EmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587360C22AE0360C00A05D03 /* EmptyView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		583C79F72AE1620B00F98F9D /* drunko.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = drunko.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		583C79FA2AE1620B00F98F9D /* drunkoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = drunkoApp.swift; sourceTree = "<group>"; };
-		583C79FC2AE1620B00F98F9D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		583C79FE2AE1620C00F98F9D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		583C7A012AE1620C00F98F9D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		583C7A082AE1621C00F98F9D /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		5873609D2ADEC91300A05D03 /* drunko.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = drunko.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		587360A02ADEC91300A05D03 /* drunkoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = drunkoApp.swift; sourceTree = "<group>"; };
+		587360A22ADEC91300A05D03 /* AlienView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlienView.swift; sourceTree = "<group>"; };
+		587360A42ADEC91400A05D03 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		587360A72ADEC91400A05D03 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		587360AE2ADEC96600A05D03 /* Drink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drink.swift; sourceTree = "<group>"; };
+		587360B02ADEDADF00A05D03 /* Coffee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coffee.swift; sourceTree = "<group>"; };
+		587360B32ADEDE1700A05D03 /* Alcohol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alcohol.swift; sourceTree = "<group>"; };
+		587360B52ADEDE3200A05D03 /* Juice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Juice.swift; sourceTree = "<group>"; };
+		587360B72ADEDE4D00A05D03 /* Water.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Water.swift; sourceTree = "<group>"; };
+		587360C22AE0360C00A05D03 /* EmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		583C79F42AE1620B00F98F9D /* Frameworks */ = {
+		5873609A2ADEC91300A05D03 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -34,52 +44,65 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		583C79EE2AE1620B00F98F9D = {
+		587360942ADEC91300A05D03 = {
 			isa = PBXGroup;
 			children = (
-				583C79F92AE1620B00F98F9D /* drunko */,
-				583C79F82AE1620B00F98F9D /* Products */,
+				5873609F2ADEC91300A05D03 /* drunko */,
+				5873609E2ADEC91300A05D03 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		583C79F82AE1620B00F98F9D /* Products */ = {
+		5873609E2ADEC91300A05D03 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				583C79F72AE1620B00F98F9D /* drunko.app */,
+				5873609D2ADEC91300A05D03 /* drunko.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		583C79F92AE1620B00F98F9D /* drunko */ = {
+		5873609F2ADEC91300A05D03 /* drunko */ = {
 			isa = PBXGroup;
 			children = (
-				583C79FA2AE1620B00F98F9D /* drunkoApp.swift */,
-				583C79FC2AE1620B00F98F9D /* ContentView.swift */,
-				583C7A082AE1621C00F98F9D /* .gitignore */,
-				583C79FE2AE1620C00F98F9D /* Assets.xcassets */,
-				583C7A002AE1620C00F98F9D /* Preview Content */,
+				587360A02ADEC91300A05D03 /* drunkoApp.swift */,
+				587360A22ADEC91300A05D03 /* AlienView.swift */,
+				587360C22AE0360C00A05D03 /* EmptyView.swift */,
+				587360AE2ADEC96600A05D03 /* Drink.swift */,
+				587360B22ADEDDFC00A05D03 /* Models */,
+				587360A42ADEC91400A05D03 /* Assets.xcassets */,
+				587360A62ADEC91400A05D03 /* Preview Content */,
 			);
 			path = drunko;
 			sourceTree = "<group>";
 		};
-		583C7A002AE1620C00F98F9D /* Preview Content */ = {
+		587360A62ADEC91400A05D03 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				583C7A012AE1620C00F98F9D /* Preview Assets.xcassets */,
+				587360A72ADEC91400A05D03 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		587360B22ADEDDFC00A05D03 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				587360B02ADEDADF00A05D03 /* Coffee.swift */,
+				587360B32ADEDE1700A05D03 /* Alcohol.swift */,
+				587360B52ADEDE3200A05D03 /* Juice.swift */,
+				587360B72ADEDE4D00A05D03 /* Water.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		583C79F62AE1620B00F98F9D /* drunko */ = {
+		5873609C2ADEC91300A05D03 /* drunko */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 583C7A052AE1620C00F98F9D /* Build configuration list for PBXNativeTarget "drunko" */;
+			buildConfigurationList = 587360AB2ADEC91400A05D03 /* Build configuration list for PBXNativeTarget "drunko" */;
 			buildPhases = (
-				583C79F32AE1620B00F98F9D /* Sources */,
-				583C79F42AE1620B00F98F9D /* Frameworks */,
-				583C79F52AE1620B00F98F9D /* Resources */,
+				587360992ADEC91300A05D03 /* Sources */,
+				5873609A2ADEC91300A05D03 /* Frameworks */,
+				5873609B2ADEC91300A05D03 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -87,25 +110,25 @@
 			);
 			name = drunko;
 			productName = drunko;
-			productReference = 583C79F72AE1620B00F98F9D /* drunko.app */;
+			productReference = 5873609D2ADEC91300A05D03 /* drunko.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		583C79EF2AE1620B00F98F9D /* Project object */ = {
+		587360952ADEC91300A05D03 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1500;
 				LastUpgradeCheck = 1500;
 				TargetAttributes = {
-					583C79F62AE1620B00F98F9D = {
+					5873609C2ADEC91300A05D03 = {
 						CreatedOnToolsVersion = 15.0;
 					};
 				};
 			};
-			buildConfigurationList = 583C79F22AE1620B00F98F9D /* Build configuration list for PBXProject "drunko" */;
+			buildConfigurationList = 587360982ADEC91300A05D03 /* Build configuration list for PBXProject "drunko" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -113,43 +136,48 @@
 				en,
 				Base,
 			);
-			mainGroup = 583C79EE2AE1620B00F98F9D;
-			productRefGroup = 583C79F82AE1620B00F98F9D /* Products */;
+			mainGroup = 587360942ADEC91300A05D03;
+			productRefGroup = 5873609E2ADEC91300A05D03 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				583C79F62AE1620B00F98F9D /* drunko */,
+				5873609C2ADEC91300A05D03 /* drunko */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		583C79F52AE1620B00F98F9D /* Resources */ = {
+		5873609B2ADEC91300A05D03 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				583C7A022AE1620C00F98F9D /* Preview Assets.xcassets in Resources */,
-				583C7A092AE1621C00F98F9D /* .gitignore in Resources */,
-				583C79FF2AE1620C00F98F9D /* Assets.xcassets in Resources */,
+				587360A82ADEC91400A05D03 /* Preview Assets.xcassets in Resources */,
+				587360A52ADEC91400A05D03 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		583C79F32AE1620B00F98F9D /* Sources */ = {
+		587360992ADEC91300A05D03 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				583C79FD2AE1620B00F98F9D /* ContentView.swift in Sources */,
-				583C79FB2AE1620B00F98F9D /* drunkoApp.swift in Sources */,
+				587360A32ADEC91300A05D03 /* AlienView.swift in Sources */,
+				587360B82ADEDE4D00A05D03 /* Water.swift in Sources */,
+				587360AF2ADEC96600A05D03 /* Drink.swift in Sources */,
+				587360B42ADEDE1700A05D03 /* Alcohol.swift in Sources */,
+				587360C32AE0360C00A05D03 /* EmptyView.swift in Sources */,
+				587360A12ADEC91300A05D03 /* drunkoApp.swift in Sources */,
+				587360B62ADEDE3200A05D03 /* Juice.swift in Sources */,
+				587360B12ADEDADF00A05D03 /* Coffee.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		583C7A032AE1620C00F98F9D /* Debug */ = {
+		587360A92ADEC91400A05D03 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -212,7 +240,7 @@
 			};
 			name = Debug;
 		};
-		583C7A042AE1620C00F98F9D /* Release */ = {
+		587360AA2ADEC91400A05D03 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -268,7 +296,7 @@
 			};
 			name = Release;
 		};
-		583C7A062AE1620C00F98F9D /* Debug */ = {
+		587360AC2ADEC91400A05D03 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -297,7 +325,7 @@
 			};
 			name = Debug;
 		};
-		583C7A072AE1620C00F98F9D /* Release */ = {
+		587360AD2ADEC91400A05D03 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -329,25 +357,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		583C79F22AE1620B00F98F9D /* Build configuration list for PBXProject "drunko" */ = {
+		587360982ADEC91300A05D03 /* Build configuration list for PBXProject "drunko" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				583C7A032AE1620C00F98F9D /* Debug */,
-				583C7A042AE1620C00F98F9D /* Release */,
+				587360A92ADEC91400A05D03 /* Debug */,
+				587360AA2ADEC91400A05D03 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		583C7A052AE1620C00F98F9D /* Build configuration list for PBXNativeTarget "drunko" */ = {
+		587360AB2ADEC91400A05D03 /* Build configuration list for PBXNativeTarget "drunko" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				583C7A062AE1620C00F98F9D /* Debug */,
-				583C7A072AE1620C00F98F9D /* Release */,
+				587360AC2ADEC91400A05D03 /* Debug */,
+				587360AD2ADEC91400A05D03 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 583C79EF2AE1620B00F98F9D /* Project object */;
+	rootObject = 587360952ADEC91300A05D03 /* Project object */;
 }
