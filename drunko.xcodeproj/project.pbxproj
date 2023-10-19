@@ -17,6 +17,8 @@
 		587360B62ADEDE3200A05D03 /* Juice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587360B52ADEDE3200A05D03 /* Juice.swift */; };
 		587360B82ADEDE4D00A05D03 /* Water.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587360B72ADEDE4D00A05D03 /* Water.swift */; };
 		587360C32AE0360C00A05D03 /* EmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587360C22AE0360C00A05D03 /* EmptyView.swift */; };
+		58BE9F8D2AE181DD0015D9DB /* ToolbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58BE9F8C2AE181DD0015D9DB /* ToolbarView.swift */; };
+		58BE9F8F2AE182600015D9DB /* DrinkSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58BE9F8E2AE182600015D9DB /* DrinkSheetView.swift */; };
 		6F049BBA2AE16B4500FC1B94 /* Milk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F049BB92AE16B4500FC1B94 /* Milk.swift */; };
 		6F049BBC2AE174BC00FC1B94 /* Tea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F049BBB2AE174BC00FC1B94 /* Tea.swift */; };
 /* End PBXBuildFile section */
@@ -33,6 +35,8 @@
 		587360B52ADEDE3200A05D03 /* Juice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Juice.swift; sourceTree = "<group>"; };
 		587360B72ADEDE4D00A05D03 /* Water.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Water.swift; sourceTree = "<group>"; };
 		587360C22AE0360C00A05D03 /* EmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyView.swift; sourceTree = "<group>"; };
+		58BE9F8C2AE181DD0015D9DB /* ToolbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolbarView.swift; sourceTree = "<group>"; };
+		58BE9F8E2AE182600015D9DB /* DrinkSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkSheetView.swift; sourceTree = "<group>"; };
 		6F049BB92AE16B4500FC1B94 /* Milk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Milk.swift; sourceTree = "<group>"; };
 		6F049BBB2AE174BC00FC1B94 /* Tea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tea.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -68,10 +72,9 @@
 			isa = PBXGroup;
 			children = (
 				587360A02ADEC91300A05D03 /* drunkoApp.swift */,
-				587360A22ADEC91300A05D03 /* AlienView.swift */,
-				587360C22AE0360C00A05D03 /* EmptyView.swift */,
 				587360AE2ADEC96600A05D03 /* Drink.swift */,
 				587360B22ADEDDFC00A05D03 /* Models */,
+				58BE9F902AE185D20015D9DB /* Views */,
 				587360A42ADEC91400A05D03 /* Assets.xcassets */,
 				587360A62ADEC91400A05D03 /* Preview Content */,
 			);
@@ -97,6 +100,17 @@
 				6F049BBB2AE174BC00FC1B94 /* Tea.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		58BE9F902AE185D20015D9DB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				587360A22ADEC91300A05D03 /* AlienView.swift */,
+				58BE9F8C2AE181DD0015D9DB /* ToolbarView.swift */,
+				58BE9F8E2AE182600015D9DB /* DrinkSheetView.swift */,
+				587360C22AE0360C00A05D03 /* EmptyView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -169,12 +183,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58BE9F8D2AE181DD0015D9DB /* ToolbarView.swift in Sources */,
 				587360A32ADEC91300A05D03 /* AlienView.swift in Sources */,
 				6F049BBA2AE16B4500FC1B94 /* Milk.swift in Sources */,
 				587360B82ADEDE4D00A05D03 /* Water.swift in Sources */,
 				587360AF2ADEC96600A05D03 /* Drink.swift in Sources */,
 				587360B42ADEDE1700A05D03 /* Alcohol.swift in Sources */,
 				587360C32AE0360C00A05D03 /* EmptyView.swift in Sources */,
+				58BE9F8F2AE182600015D9DB /* DrinkSheetView.swift in Sources */,
 				587360A12ADEC91300A05D03 /* drunkoApp.swift in Sources */,
 				6F049BBC2AE174BC00FC1B94 /* Tea.swift in Sources */,
 				587360B62ADEDE3200A05D03 /* Juice.swift in Sources */,
