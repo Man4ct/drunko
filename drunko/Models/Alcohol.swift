@@ -7,7 +7,7 @@
 
 let alcohol = Drink(
     name: "Alcohol",
-    category: .alcohol,
+    category: .ALCOHOL,
     negativeHealth: -15, // Decreases pet's health when consumed
     positiveHealth: 5,   // Increases pet's health when consumed in moderation
     positiveResponse: [
