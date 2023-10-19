@@ -8,10 +8,10 @@
 import Foundation
 
 enum DrinkCategory {
-    case alcohol
-    case coffee
-    case water
-    case juice
+    case ALCOHOL
+    case COFFEE
+    case WATER
+    case JUICE
 }
 
 struct Drink {
