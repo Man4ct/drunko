@@ -9,7 +9,7 @@
 // Define instances of the Drink entity with the DrinkCategory enum
 let coffee = Drink(
     name: "Coffee",
-    category: .coffee,
+    category: .COFFEE,
     negativeHealth: -10, // Decreases pet's health when consumed
     positiveHealth: 5,   // Increases pet's health when consumed in moderation
     positiveResponse: [
