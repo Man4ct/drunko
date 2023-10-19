@@ -17,6 +17,8 @@
 		587360B62ADEDE3200A05D03 /* Juice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587360B52ADEDE3200A05D03 /* Juice.swift */; };
 		587360B82ADEDE4D00A05D03 /* Water.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587360B72ADEDE4D00A05D03 /* Water.swift */; };
 		587360C32AE0360C00A05D03 /* EmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587360C22AE0360C00A05D03 /* EmptyView.swift */; };
+		6F049BBA2AE16B4500FC1B94 /* Milk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F049BB92AE16B4500FC1B94 /* Milk.swift */; };
+		6F049BBC2AE174BC00FC1B94 /* Tea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F049BBB2AE174BC00FC1B94 /* Tea.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +33,8 @@
 		587360B52ADEDE3200A05D03 /* Juice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Juice.swift; sourceTree = "<group>"; };
 		587360B72ADEDE4D00A05D03 /* Water.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Water.swift; sourceTree = "<group>"; };
 		587360C22AE0360C00A05D03 /* EmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyView.swift; sourceTree = "<group>"; };
+		6F049BB92AE16B4500FC1B94 /* Milk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Milk.swift; sourceTree = "<group>"; };
+		6F049BBB2AE174BC00FC1B94 /* Tea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tea.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +93,8 @@
 				587360B32ADEDE1700A05D03 /* Alcohol.swift */,
 				587360B52ADEDE3200A05D03 /* Juice.swift */,
 				587360B72ADEDE4D00A05D03 /* Water.swift */,
+				6F049BB92AE16B4500FC1B94 /* Milk.swift */,
+				6F049BBB2AE174BC00FC1B94 /* Tea.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -164,11 +170,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				587360A32ADEC91300A05D03 /* AlienView.swift in Sources */,
+				6F049BBA2AE16B4500FC1B94 /* Milk.swift in Sources */,
 				587360B82ADEDE4D00A05D03 /* Water.swift in Sources */,
 				587360AF2ADEC96600A05D03 /* Drink.swift in Sources */,
 				587360B42ADEDE1700A05D03 /* Alcohol.swift in Sources */,
 				587360C32AE0360C00A05D03 /* EmptyView.swift in Sources */,
 				587360A12ADEC91300A05D03 /* drunkoApp.swift in Sources */,
+				6F049BBC2AE174BC00FC1B94 /* Tea.swift in Sources */,
 				587360B62ADEDE3200A05D03 /* Juice.swift in Sources */,
 				587360B12ADEDADF00A05D03 /* Coffee.swift in Sources */,
 			);

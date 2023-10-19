@@ -12,6 +12,8 @@ enum DrinkCategory {
     case COFFEE
     case WATER
     case JUICE
+    case MILK
+    case TEA
 }
 
 struct Drink {
