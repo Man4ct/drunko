@@ -9,7 +9,7 @@ let water = Drink(
     name: "Water",
     category: .WATER,
     negativeHealth: -2,  // Decreases pet's health when consumed in excess
-    positiveHealth: 8,   // Increases pet's health when consumed
+    positiveHealth: 15,   // Increases pet's health when consumed
     positiveResponse: [
         "Hydration is key! Thanks for the water.",
         "I'm feeling refreshed and hydrated now.",
