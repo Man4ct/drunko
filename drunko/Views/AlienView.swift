@@ -26,33 +26,23 @@ struct AlienView: View {
                     //                        .rotationEffect(.degrees(30.0))
                 }
                 
-                
                 Image("alien1")
                     .shadow(radius: 5, y: 10)
                 
             }
             .toolbar {
                 ToolbarItemGroup(placement: .bottomBar) {
-                    Button(role:.cancel ,action: {
-                        isShowingCupSheet.toggle()
-                    }, label: {
-                        Label("Cup", systemImage: "cup.and.saucer.fill")
-                    })
-                    .sheet(isPresented: $isShowingCupSheet, content: {
-                        DrinkSheetView()  
-                            .presentationDetents([.medium])
-                    })
+                    createButton(role: .cancel, toggle: $isShowingCupSheet, label: "Drinks", imageName: "cup.and.saucer.fill")
+                        .sheet(isPresented: $isShowingCupSheet, content: {
+                            DrinkSheetView()  // This is from another view
+                                .presentationDetents([.medium])
+                        })
                     Spacer()
-                    Button(role:.cancel ,action: {
-                        isShowingTrophySheet.toggle()
-                    }, label: {
-                        Label("Cup", systemImage: "trophy.circle")
-                        
-                    })
-                    .sheet(isPresented: $isShowingTrophySheet, content: {
-                        Text("This is half modal sheet for trophy")
-                            .presentationDetents([.medium])
-                    })
+                    createButton(role: .cancel, toggle: $isShowingTrophySheet, label: "Achievements", imageName: "trophy.circle")
+                        .sheet(isPresented: $isShowingTrophySheet, content: {
+                            Text("This is half modal sheet for trophy")
+                                .presentationDetents([.medium])
+                        })
                 }
             }
         }
@@ -63,4 +53,15 @@ struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         AlienView()
     }
+}
+
+
+// Function to create Button
+func createButton(role: ButtonRole, toggle: Binding<Bool>, label: String, imageName: String ) ->  Button<Label<Text, Image>> {
+    let buttonCreated = Button(role:role ,action: {
+        toggle.wrappedValue.toggle()
+    }, label: {
+        Label(label, systemImage: imageName)
+    })
+    return buttonCreated
 }
