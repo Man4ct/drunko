@@ -12,8 +12,9 @@ let water = Drink(
     positiveHealth: 15,   // Increases pet's health when consumed
     positiveResponse: [
         "Hydration is key! Thanks for the water.",
-        "I'm feeling refreshed and hydrated now.",
-        "Water is always a good choice for me."
+        "I'm feeling sooo refreshed now!",
+        "Water is always a good choice for me.",
+        "Water is where life comes from. Wow!"
     ],
     negativeResponse: [
         "I'm not really thirsty right now.",
