@@ -12,15 +12,9 @@
 		587360A52ADEC91400A05D03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 587360A42ADEC91400A05D03 /* Assets.xcassets */; };
 		587360A82ADEC91400A05D03 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 587360A72ADEC91400A05D03 /* Preview Assets.xcassets */; };
 		587360AF2ADEC96600A05D03 /* Drink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587360AE2ADEC96600A05D03 /* Drink.swift */; };
-		587360B12ADEDADF00A05D03 /* Coffee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587360B02ADEDADF00A05D03 /* Coffee.swift */; };
-		587360B42ADEDE1700A05D03 /* Alcohol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587360B32ADEDE1700A05D03 /* Alcohol.swift */; };
-		587360B62ADEDE3200A05D03 /* Juice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587360B52ADEDE3200A05D03 /* Juice.swift */; };
-		587360B82ADEDE4D00A05D03 /* Water.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587360B72ADEDE4D00A05D03 /* Water.swift */; };
 		587360C32AE0360C00A05D03 /* EmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587360C22AE0360C00A05D03 /* EmptyView.swift */; };
 		58BE9F8D2AE181DD0015D9DB /* ToolbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58BE9F8C2AE181DD0015D9DB /* ToolbarView.swift */; };
 		58BE9F8F2AE182600015D9DB /* DrinkSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58BE9F8E2AE182600015D9DB /* DrinkSheetView.swift */; };
-		6F049BBA2AE16B4500FC1B94 /* Milk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F049BB92AE16B4500FC1B94 /* Milk.swift */; };
-		6F049BBC2AE174BC00FC1B94 /* Tea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F049BBB2AE174BC00FC1B94 /* Tea.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,15 +24,9 @@
 		587360A42ADEC91400A05D03 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		587360A72ADEC91400A05D03 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		587360AE2ADEC96600A05D03 /* Drink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drink.swift; sourceTree = "<group>"; };
-		587360B02ADEDADF00A05D03 /* Coffee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coffee.swift; sourceTree = "<group>"; };
-		587360B32ADEDE1700A05D03 /* Alcohol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alcohol.swift; sourceTree = "<group>"; };
-		587360B52ADEDE3200A05D03 /* Juice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Juice.swift; sourceTree = "<group>"; };
-		587360B72ADEDE4D00A05D03 /* Water.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Water.swift; sourceTree = "<group>"; };
 		587360C22AE0360C00A05D03 /* EmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyView.swift; sourceTree = "<group>"; };
 		58BE9F8C2AE181DD0015D9DB /* ToolbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolbarView.swift; sourceTree = "<group>"; };
 		58BE9F8E2AE182600015D9DB /* DrinkSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkSheetView.swift; sourceTree = "<group>"; };
-		6F049BB92AE16B4500FC1B94 /* Milk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Milk.swift; sourceTree = "<group>"; };
-		6F049BBB2AE174BC00FC1B94 /* Tea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tea.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,7 +61,6 @@
 			children = (
 				587360A02ADEC91300A05D03 /* drunkoApp.swift */,
 				587360AE2ADEC96600A05D03 /* Drink.swift */,
-				587360B22ADEDDFC00A05D03 /* Models */,
 				58BE9F902AE185D20015D9DB /* Views */,
 				587360A42ADEC91400A05D03 /* Assets.xcassets */,
 				587360A62ADEC91400A05D03 /* Preview Content */,
@@ -87,19 +74,6 @@
 				587360A72ADEC91400A05D03 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		587360B22ADEDDFC00A05D03 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				587360B02ADEDADF00A05D03 /* Coffee.swift */,
-				587360B32ADEDE1700A05D03 /* Alcohol.swift */,
-				587360B52ADEDE3200A05D03 /* Juice.swift */,
-				587360B72ADEDE4D00A05D03 /* Water.swift */,
-				6F049BB92AE16B4500FC1B94 /* Milk.swift */,
-				6F049BBB2AE174BC00FC1B94 /* Tea.swift */,
-			);
-			path = Models;
 			sourceTree = "<group>";
 		};
 		58BE9F902AE185D20015D9DB /* Views */ = {
@@ -185,16 +159,10 @@
 			files = (
 				58BE9F8D2AE181DD0015D9DB /* ToolbarView.swift in Sources */,
 				587360A32ADEC91300A05D03 /* AlienView.swift in Sources */,
-				6F049BBA2AE16B4500FC1B94 /* Milk.swift in Sources */,
-				587360B82ADEDE4D00A05D03 /* Water.swift in Sources */,
 				587360AF2ADEC96600A05D03 /* Drink.swift in Sources */,
-				587360B42ADEDE1700A05D03 /* Alcohol.swift in Sources */,
 				587360C32AE0360C00A05D03 /* EmptyView.swift in Sources */,
 				58BE9F8F2AE182600015D9DB /* DrinkSheetView.swift in Sources */,
 				587360A12ADEC91300A05D03 /* drunkoApp.swift in Sources */,
-				6F049BBC2AE174BC00FC1B94 /* Tea.swift in Sources */,
-				587360B62ADEDE3200A05D03 /* Juice.swift in Sources */,
-				587360B12ADEDADF00A05D03 /* Coffee.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,7 +296,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"drunko/Preview Content\"";
-				DEVELOPMENT_TEAM = 27J9MHRH2K;
+				DEVELOPMENT_TEAM = 4Y3AUCBUM3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -341,7 +309,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "fahmi-ios-devs.drunko";
+				PRODUCT_BUNDLE_IDENTIFIER = "fahmi-ios-devs.drunkots";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -357,7 +325,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"drunko/Preview Content\"";
-				DEVELOPMENT_TEAM = 27J9MHRH2K;
+				DEVELOPMENT_TEAM = 4Y3AUCBUM3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -370,7 +338,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "fahmi-ios-devs.drunko";
+				PRODUCT_BUNDLE_IDENTIFIER = "fahmi-ios-devs.drunkots";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

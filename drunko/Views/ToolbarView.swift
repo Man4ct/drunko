@@ -42,7 +42,7 @@ struct ToolbarView: View {
                         Label("Cup", systemImage: "cup.and.saucer.fill")
                     })
                     .sheet(isPresented: $isShowingCupSheet, content: {
-                        DrinkSheetView()                        .presentationDetents([.medium])
+                        DrinkSheetView()                        .presentationDetents([.height(350)])
                     })
                     Spacer()
                     Button(role:.cancel ,action: {
