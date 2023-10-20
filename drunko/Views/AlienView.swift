@@ -32,17 +32,13 @@ struct AlienView: View {
             }
             .toolbar {
                 ToolbarItemGroup(placement: .bottomBar) {
-                    createButton(role: .cancel, toggle: $isShowingCupSheet, label: "Drinks", imageName: "cup.and.saucer.fill")
-                        .sheet(isPresented: $isShowingCupSheet, content: {
-                            DrinkSheetView()  // This is from another view
-                                .presentationDetents([.medium])
-                        })
+                    SheetButton(systemName: "cup.and.saucer.fill", content: {
+                        DrinkSheetView() .presentationDetents([.medium])
+                    }, isShowingSheet: isShowingCupSheet)
                     Spacer()
-                    createButton(role: .cancel, toggle: $isShowingTrophySheet, label: "Achievements", imageName: "trophy.circle")
-                        .sheet(isPresented: $isShowingTrophySheet, content: {
-                            Text("This is half modal sheet for trophy")
-                                .presentationDetents([.medium])
-                        })
+                    SheetButton(systemName: "trophy.circle", content: {
+                        Text("This is half modal sheet for trophy") .presentationDetents([.medium])
+                    }, isShowingSheet: isShowingTrophySheet)
                 }
             }
         }
@@ -55,13 +51,3 @@ struct ContentView_Previews: PreviewProvider {
     }
 }
 
-
-// Function to create Button
-func createButton(role: ButtonRole, toggle: Binding<Bool>, label: String, imageName: String ) ->  Button<Label<Text, Image>> {
-    let buttonCreated = Button(role:role ,action: {
-        toggle.wrappedValue.toggle()
-    }, label: {
-        Label(label, systemImage: imageName)
-    })
-    return buttonCreated
-}
