@@ -6,8 +6,10 @@
 //
 
 import Foundation
+import SwiftUI
+import UniformTypeIdentifiers
 
-enum Drinks: Int, CaseIterable, Identifiable {
+enum DrinksType: Int, CaseIterable, Identifiable, Codable, Transferable{
     case SOFT_ALCOHOL
     case STRONG_ALCOHOL
     case COFFEE
@@ -16,6 +18,10 @@ enum Drinks: Int, CaseIterable, Identifiable {
     case VEGETABLE_SMOOTHIE
     case MILK
     case TEA
+    
+    var transferRepresentation: some TransferRepresentation{
+        CodableRepresentation(contentType: .drinkDrag)
+    }
     
     var id: Int {
         return self.rawValue
@@ -207,4 +213,11 @@ enum Drinks: Int, CaseIterable, Identifiable {
             }
         }
     }
+    
+}
+
+let midori:
+
+extension UTType{
+    static let drinkDrag = UTType(exportedAs: "fahmi-ios-devs.drunkots.drinkDrag")
 }

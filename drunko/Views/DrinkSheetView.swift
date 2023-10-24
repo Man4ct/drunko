@@ -8,29 +8,25 @@
 import SwiftUI
 
 struct DrinkSheetView: View {
+    
+    
+    
     var body: some View {
         VStack{
             TabView{
-                VStack{
-                    Text("Water")
-                        .font(.title)
-                        .padding(.bottom, 30)
-                    Image("waterImage")
-                        .padding(.bottom, 30)
-                }
-                
-                ForEach(Drinks.allCases) { drink in
+                ForEach(drinkList) { drink in
                     VStack{
                         Text(drink.name)
                             .font(.title)
                             .padding(.bottom, 30)
                         Image("waterImage")
                             .padding(.bottom, 30)
+                            .draggable(drink)
                     }
                 }
             }
             .tabViewStyle(.page)
-            .frame(height: 270)
+            .frame(height: 290)
             VStack{
                 Text("Drag and drop the drink to give it to the mascott")
                     .padding(.bottom, 5)

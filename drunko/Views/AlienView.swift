@@ -7,6 +7,7 @@
 import SwiftUI
 
 struct AlienView: View {
+    
     @State private var isShowingCupSheet = false
     @State private var isShowingTrophySheet = false
     
@@ -28,12 +29,16 @@ struct AlienView: View {
                 
                 Image("alien1")
                     .shadow(radius: 5, y: 10)
+                    .dropDestination(for: Drink.self){items,location in
+                        return true
+                    }
                 
             }
             .toolbar {
                 ToolbarItemGroup(placement: .bottomBar) {
                     SheetButton(systemName: "cup.and.saucer.fill", content: {
-                        DrinkSheetView() .presentationDetents([.medium])
+                        DrinkSheetView()
+                            .presentationDetents([.medium])
                     }, isShowingSheet: isShowingCupSheet)
                     Spacer()
                     SheetButton(systemName: "trophy.circle", content: {
