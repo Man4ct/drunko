@@ -20,6 +20,7 @@ struct drunkoApp: App {
             }
         }
     }
+    
     var body: some Scene {
         WindowGroup {
             AlienView()
