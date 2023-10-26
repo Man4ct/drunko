@@ -10,6 +10,9 @@
 		548810862AE75796001D09F0 /* DrinkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548810852AE75796001D09F0 /* DrinkModel.swift */; };
 		548810882AE762EC001D09F0 /* DrinkViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548810872AE762EC001D09F0 /* DrinkViewModel.swift */; };
 		5488108B2AE967D4001D09F0 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5488108A2AE967D4001D09F0 /* Utils.swift */; };
+		584294912AE80D2600589520 /* Achievement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584294902AE80D2600589520 /* Achievement.swift */; };
+		584294932AE80DA800589520 /* Achievements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584294922AE80DA800589520 /* Achievements.swift */; };
+		584294952AE80E5300589520 /* AchievementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584294942AE80E5300589520 /* AchievementView.swift */; };
 		584A9EA92AE2B3BA0095A369 /* SheetButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584A9EA82AE2B3BA0095A369 /* SheetButton.swift */; };
 		584A9EAB2AE2C1220095A369 /* NotificationUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584A9EAA2AE2C1220095A369 /* NotificationUtility.swift */; };
 		587360A12ADEC91300A05D03 /* drunkoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587360A02ADEC91300A05D03 /* drunkoApp.swift */; };
@@ -25,6 +28,9 @@
 		548810872AE762EC001D09F0 /* DrinkViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkViewModel.swift; sourceTree = "<group>"; };
 		548810892AE77317001D09F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		5488108A2AE967D4001D09F0 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		584294902AE80D2600589520 /* Achievement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Achievement.swift; sourceTree = "<group>"; };
+		584294922AE80DA800589520 /* Achievements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Achievements.swift; sourceTree = "<group>"; };
+		584294942AE80E5300589520 /* AchievementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementView.swift; sourceTree = "<group>"; };
 		584A9EA82AE2B3BA0095A369 /* SheetButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetButton.swift; sourceTree = "<group>"; };
 		584A9EAA2AE2C1220095A369 /* NotificationUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationUtility.swift; sourceTree = "<group>"; };
 		5873609D2ADEC91300A05D03 /* drunko.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = drunko.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -77,6 +83,8 @@
 			children = (
 				548810892AE77317001D09F0 /* Info.plist */,
 				584A9EAA2AE2C1220095A369 /* NotificationUtility.swift */,
+				584294902AE80D2600589520 /* Achievement.swift */,
+				584294922AE80DA800589520 /* Achievements.swift */,
 				587360A02ADEC91300A05D03 /* drunkoApp.swift */,
 				5488108A2AE967D4001D09F0 /* Utils.swift */,
 				548810822AE75683001D09F0 /* Drinks */,
@@ -102,6 +110,7 @@
 				58BE9F8E2AE182600015D9DB /* DrinkSheetView.swift */,
 				587360C22AE0360C00A05D03 /* EmptyView.swift */,
 				584A9EA82AE2B3BA0095A369 /* SheetButton.swift */,
+				584294942AE80E5300589520 /* AchievementView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -177,6 +186,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				587360A32ADEC91300A05D03 /* AlienView.swift in Sources */,
+				584294952AE80E5300589520 /* AchievementView.swift in Sources */,
+				584294932AE80DA800589520 /* Achievements.swift in Sources */,
 				584A9EA92AE2B3BA0095A369 /* SheetButton.swift in Sources */,
 				5488108B2AE967D4001D09F0 /* Utils.swift in Sources */,
 				548810862AE75796001D09F0 /* DrinkModel.swift in Sources */,
@@ -185,6 +196,7 @@
 				58BE9F8F2AE182600015D9DB /* DrinkSheetView.swift in Sources */,
 				584A9EAB2AE2C1220095A369 /* NotificationUtility.swift in Sources */,
 				587360A12ADEC91300A05D03 /* drunkoApp.swift in Sources */,
+				584294912AE80D2600589520 /* Achievement.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
