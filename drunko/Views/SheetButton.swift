@@ -12,7 +12,7 @@ struct SheetButton<Content: View>: View {
     var systemName: String
     @ViewBuilder var content: () -> Content
     
-    @State var isShowingSheet: Bool = false
+    @Binding var isShowingSheet: Bool
     
     var body: some View {
         Button {
@@ -25,10 +25,4 @@ struct SheetButton<Content: View>: View {
         })
     }
     
-}
-
-#Preview {
-    SheetButton(systemName: "cup.and.saucer.fill", content: {
-        DrinkSheetView() .presentationDetents([.medium])
-    })
 }

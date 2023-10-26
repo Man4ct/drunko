@@ -48,7 +48,7 @@ let juiceDrink = Drink(
 
 let coffeeDrink = Drink(
     name: "Coffee",
-    imageName: "coffeeImage",
+    imageName: "drink",
     type: .COFFEE,
     negativeHealth: -10, // Decreases pet's health when consumed
     positiveHealth: 5,   // Increases pet's health when consumed in moderation

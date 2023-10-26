@@ -19,6 +19,10 @@ struct drunkoApp: App {
                 scheduleNotification()
             }
         }
+        if(!userDefaultKeyExist(key: "health")){
+            UserDefaults.standard.setValue(25, forKey: "health")
+        }else{
+        }
     }
     
     var body: some Scene {
