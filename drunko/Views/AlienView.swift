@@ -11,9 +11,13 @@ struct AlienView: View {
     @State private var isShowingCupSheet = false
     @State private var isShowingTrophySheet = false
     
+    @State private var drink: Drink = coffeeDrink
+    
+    
     var body: some View {
         NavigationStack {
             ZStack {
+                
                 Color(.backgroundClor)
                     .ignoresSafeArea(edges: [.top])
                 
@@ -28,22 +32,27 @@ struct AlienView: View {
                 }
                 
                 Image("alien1")
+                    .resizable()
+                    .frame(width: 300,height: 350)
                     .shadow(radius: 5, y: 10)
-                    .dropDestination(for: Drink.self){items,location in
-                        return true
-                    }
                 
+            }
+            .dropDestination(for: Drink.self){ items,location in
+                drink = items.first!
+                isShowingCupSheet = false
+                return true
             }
             .toolbar {
                 ToolbarItemGroup(placement: .bottomBar) {
                     SheetButton(systemName: "cup.and.saucer.fill", content: {
                         DrinkSheetView()
                             .presentationDetents([.medium])
-                    }, isShowingSheet: isShowingCupSheet)
+                            .presentationBackgroundInteraction(.enabled(upThrough: .medium))
+                    }, isShowingSheet: $isShowingCupSheet)
                     Spacer()
-                    SheetButton(systemName: "trophy.circle", content: {
+                    SheetButton(systemName: "trophy.fill", content: {
                         Text("This is half modal sheet for trophy") .presentationDetents([.medium])
-                    }, isShowingSheet: isShowingTrophySheet)
+                    }, isShowingSheet: $isShowingTrophySheet)
                 }
             }
         }
