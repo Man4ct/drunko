@@ -50,8 +50,9 @@ struct AlienView: View {
                             .presentationBackgroundInteraction(.enabled(upThrough: .medium))
                     }, isShowingSheet: $isShowingCupSheet)
                     Spacer()
-                    SheetButton(systemName: "trophy.fill", content: {
-                        Text("This is half modal sheet for trophy") .presentationDetents([.medium])
+
+                    SheetButton(systemName: "trophy.circle", content: {
+                        AchievementView().presentationDetents([.medium])
                     }, isShowingSheet: $isShowingTrophySheet)
                 }
             }
