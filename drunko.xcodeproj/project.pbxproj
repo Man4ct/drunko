@@ -20,6 +20,7 @@
 		587360A52ADEC91400A05D03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 587360A42ADEC91400A05D03 /* Assets.xcassets */; };
 		587360A82ADEC91400A05D03 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 587360A72ADEC91400A05D03 /* Preview Assets.xcassets */; };
 		587360C32AE0360C00A05D03 /* EmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587360C22AE0360C00A05D03 /* EmptyView.swift */; };
+		589488C72AEAA21A00765D4E /* DefaultCounters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589488C62AEAA21A00765D4E /* DefaultCounters.swift */; };
 		58BE9F8F2AE182600015D9DB /* DrinkSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58BE9F8E2AE182600015D9DB /* DrinkSheetView.swift */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +40,7 @@
 		587360A42ADEC91400A05D03 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		587360A72ADEC91400A05D03 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		587360C22AE0360C00A05D03 /* EmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyView.swift; sourceTree = "<group>"; };
+		589488C62AEAA21A00765D4E /* DefaultCounters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultCounters.swift; sourceTree = "<group>"; };
 		58BE9F8E2AE182600015D9DB /* DrinkSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkSheetView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -86,6 +88,7 @@
 				584294902AE80D2600589520 /* Achievement.swift */,
 				584294922AE80DA800589520 /* Achievements.swift */,
 				587360A02ADEC91300A05D03 /* drunkoApp.swift */,
+				589488C62AEAA21A00765D4E /* DefaultCounters.swift */,
 				5488108A2AE967D4001D09F0 /* Utils.swift */,
 				548810822AE75683001D09F0 /* Drinks */,
 				58BE9F902AE185D20015D9DB /* Views */,
@@ -194,6 +197,7 @@
 				587360C32AE0360C00A05D03 /* EmptyView.swift in Sources */,
 				548810882AE762EC001D09F0 /* DrinkViewModel.swift in Sources */,
 				58BE9F8F2AE182600015D9DB /* DrinkSheetView.swift in Sources */,
+				589488C72AEAA21A00765D4E /* DefaultCounters.swift in Sources */,
 				584A9EAB2AE2C1220095A369 /* NotificationUtility.swift in Sources */,
 				587360A12ADEC91300A05D03 /* drunkoApp.swift in Sources */,
 				584294912AE80D2600589520 /* Achievement.swift in Sources */,

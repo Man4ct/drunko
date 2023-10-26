@@ -9,9 +9,9 @@ import SwiftUI
 
 struct AchievementView: View {
     let achievements = Achievements()
-    @AppStorage("counterFirstDrink") var counterFirstDrink = 0.0
-    @AppStorage("counterFirstTutorial") var counterFirstTutorial = 0.0
-    @AppStorage("counterFiveDrink") var counterFiveDrink = 2.0
+    @AppStorage("counterFirstDrink") var counterFirstDrink = DefaultCounters.counterFirstDrink
+    @AppStorage("counterFirstTutorial") var counterFirstTutorial = DefaultCounters.counterFirstTutorial
+    @AppStorage("counterFiveDrink") var counterFiveDrink = DefaultCounters.counterFiveDrink
 
     var body: some View {
         VStack{
