@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct DrinkSheetView: View {
-    
 
     var body: some View {
         VStack{
