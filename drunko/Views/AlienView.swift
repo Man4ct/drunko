@@ -7,17 +7,15 @@
 import SwiftUI
 
 struct AlienView: View {
-    
     @State private var isShowingCupSheet = false
     @State private var isShowingTrophySheet = false
-    
     @State private var drink: Drink = coffeeDrink
-    
+    @AppStorage("counterFirstDrink") var counterFirstDrink = DefaultCounters.counterFirstDrink
+    @AppStorage("counterFiveDrink") var counterFiveDrink = DefaultCounters.counterFiveDrink
     
     var body: some View {
         NavigationStack {
             ZStack {
-                
                 Color(.backgroundClor)
                     .ignoresSafeArea(edges: [.top])
                 
@@ -28,7 +26,6 @@ struct AlienView: View {
                         .aspectRatio(contentMode: .fit)
                         .foregroundStyle(.yellow)
                         .opacity(0.5)
-                    //                        .rotationEffect(.degrees(30.0))
                 }
                 
                 Image("alien1")
@@ -39,6 +36,13 @@ struct AlienView: View {
             }
             .dropDestination(for: Drink.self){ items,location in
                 drink = items.first!
+                
+                if(counterFirstDrink == 0) {
+                    counterFirstDrink = 1
+                }
+                if(counterFiveDrink < 5) {
+                    counterFiveDrink += 1
+                }
                 isShowingCupSheet = false
                 return true
             }
@@ -50,7 +54,7 @@ struct AlienView: View {
                             .presentationBackgroundInteraction(.enabled(upThrough: .medium))
                     }, isShowingSheet: $isShowingCupSheet)
                     Spacer()
-
+                    
                     SheetButton(systemName: "trophy.circle", content: {
                         AchievementView().presentationDetents([.medium])
                     }, isShowingSheet: $isShowingTrophySheet)
