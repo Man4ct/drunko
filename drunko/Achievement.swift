@@ -7,6 +7,13 @@
 
 import Foundation
 
+enum TutorialType {
+    case COFFEE
+    case ONEDRINK
+    case FIVEDRINK
+    case TUTORIAL
+}
+
 struct Achievement: Identifiable {
     let id: UUID = UUID()
     let title: String
@@ -14,4 +21,5 @@ struct Achievement: Identifiable {
     let description: String
     var counter: Double = 0.0
     let counterEnd: Double
+    let type: TutorialType
 }
