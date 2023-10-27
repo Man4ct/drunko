@@ -15,7 +15,7 @@ enum DrinkType: Codable{
     case COFFEE
     case WATER
     case FRUIT_JUICE
-    case VEGETABLE_SMOOTHIE
+    case SUGARY
     case MILK
     case TEA
 }

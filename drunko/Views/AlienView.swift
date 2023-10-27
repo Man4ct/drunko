@@ -13,12 +13,29 @@ struct AlienView: View {
     @AppStorage("counterFirstDrink") var counterFirstDrink = DefaultCounters.counterFirstDrink
     @AppStorage("counterFiveDrink") var counterFiveDrink = DefaultCounters.counterFiveDrink
     @AppStorage("counterCoffee") var counterCoffee = DefaultCounters.counterCoffee
+    private let health: Double = Double(round(10000 * UserDefaults.standard.double(forKey: "health")) / 10000)
+    
     
     var body: some View {
         NavigationStack {
             ZStack {
                 Color(.backgroundClor)
                     .ignoresSafeArea(edges: [.top])
+                
+                VStack(spacing: 20) {
+                    ProgressView(value: health) {
+                        Text("Label")
+                    } currentValueLabel: {
+                        Text("Current Value Label: \(health)")
+                    }
+                    Text("Current Value Label: \(health)")
+                    .frame(width: 300, height: 20)
+                    
+                }
+                .progressViewStyle(.linear)
+                .tint(.pink)
+                .padding()
+                .offset(y:-200)
                 
                 VStack {
                     Spacer()
@@ -33,6 +50,7 @@ struct AlienView: View {
                     .resizable()
                     .frame(width: 300,height: 350)
                     .shadow(radius: 5, y: 10)
+                    .offset(y: 40)
                 
             }
             .dropDestination(for: Drink.self){ items,location in

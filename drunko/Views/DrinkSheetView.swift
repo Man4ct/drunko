@@ -8,6 +8,11 @@
 import SwiftUI
 
 struct DrinkSheetView: View {
+    
+    init() {
+        UIPageControl.appearance().currentPageIndicatorTintColor = .darkGray
+        UIPageControl.appearance().pageIndicatorTintColor = UIColor.gray
+        }
 
     var body: some View {
         VStack{
@@ -21,10 +26,35 @@ struct DrinkSheetView: View {
                         Text(drink.name)
                             .font(.title)
                             .padding(.bottom, 10)
-                        Image("waterImage")
+                        if(drink.imageName == "teaImage"){
+                            Image(drink.imageName)
+                                .resizable()
+                                .scaledToFit()
+                                .frame(maxHeight: 150)
+                                .offset(x: 15, y: 20)
+                                .draggable(drink)
+                        }else if(drink.imageName == "negroniImage"){
+                            Image(drink.imageName)
                             .resizable()
-                            .frame(width: 80, height: 200)
+                            .scaledToFit()
+                            .frame(maxHeight: 200)
+                            .offset(y: 30)
                             .draggable(drink)
+                        }else if(drink.imageName == "waterImage"){
+                            Image(drink.imageName)
+                            .resizable()
+                            .scaledToFit()
+                            .frame(maxHeight: 200)
+                            .offset(y: 20)
+                            .draggable(drink)
+                        }
+                        else{
+                            Image(drink.imageName)
+                                .resizable()
+                                .scaledToFit()
+                                .frame(maxHeight: 200)
+                                .draggable(drink)
+                        }
                     }
                 }
             }
