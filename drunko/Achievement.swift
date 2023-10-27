@@ -19,7 +19,6 @@ struct Achievement: Identifiable {
     let title: String
     var imageName: String
     let description: String
-    var counter: Double = 0.0
     let counterEnd: Double
     let type: TutorialType
 }

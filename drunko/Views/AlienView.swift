@@ -64,7 +64,6 @@ struct AlienView: View {
             .dropDestination(for: Drink.self){ items,location in
                 drink = items.first!
                 
-                print(drink)
                 if(counterFirstDrink == 0) {
                     counterFirstDrink = 1
                 }
