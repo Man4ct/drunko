@@ -16,6 +16,7 @@
 		584A9EA92AE2B3BA0095A369 /* SheetButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584A9EA82AE2B3BA0095A369 /* SheetButton.swift */; };
 		584A9EAB2AE2C1220095A369 /* NotificationUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584A9EAA2AE2C1220095A369 /* NotificationUtility.swift */; };
 		58708F6C2AEBE91000FCB0A1 /* AchievementProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58708F6B2AEBE91000FCB0A1 /* AchievementProgressView.swift */; };
+		58708F6E2AEBEF2000FCB0A1 /* AchievementImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58708F6D2AEBEF2000FCB0A1 /* AchievementImageView.swift */; };
 		587360A12ADEC91300A05D03 /* drunkoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587360A02ADEC91300A05D03 /* drunkoApp.swift */; };
 		587360A32ADEC91300A05D03 /* AlienView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587360A22ADEC91300A05D03 /* AlienView.swift */; };
 		587360A52ADEC91400A05D03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 587360A42ADEC91400A05D03 /* Assets.xcassets */; };
@@ -36,6 +37,7 @@
 		584A9EA82AE2B3BA0095A369 /* SheetButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetButton.swift; sourceTree = "<group>"; };
 		584A9EAA2AE2C1220095A369 /* NotificationUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationUtility.swift; sourceTree = "<group>"; };
 		58708F6B2AEBE91000FCB0A1 /* AchievementProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementProgressView.swift; sourceTree = "<group>"; };
+		58708F6D2AEBEF2000FCB0A1 /* AchievementImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementImageView.swift; sourceTree = "<group>"; };
 		5873609D2ADEC91300A05D03 /* drunko.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = drunko.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		587360A02ADEC91300A05D03 /* drunkoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = drunkoApp.swift; sourceTree = "<group>"; };
 		587360A22ADEC91300A05D03 /* AlienView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlienView.swift; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 				584A9EA82AE2B3BA0095A369 /* SheetButton.swift */,
 				58708F6B2AEBE91000FCB0A1 /* AchievementProgressView.swift */,
 				584294942AE80E5300589520 /* AchievementView.swift */,
+				58708F6D2AEBEF2000FCB0A1 /* AchievementImageView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -192,6 +195,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				587360A32ADEC91300A05D03 /* AlienView.swift in Sources */,
+				58708F6E2AEBEF2000FCB0A1 /* AchievementImageView.swift in Sources */,
 				584294952AE80E5300589520 /* AchievementView.swift in Sources */,
 				584294932AE80DA800589520 /* Achievements.swift in Sources */,
 				584A9EA92AE2B3BA0095A369 /* SheetButton.swift in Sources */,
