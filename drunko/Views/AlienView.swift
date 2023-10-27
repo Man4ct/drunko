@@ -18,40 +18,48 @@ struct AlienView: View {
     
     var body: some View {
         NavigationStack {
-            ZStack {
-                Color(.backgroundClor)
-                    .ignoresSafeArea(edges: [.top])
+            ZStack{
+                RadialGradient(gradient: Gradient(colors: [Color(#colorLiteral(red: 0.6030268073, green: 0.6080136299, blue: 0.8535711169, alpha: 1)), Color(#colorLiteral(red: 0.2372646034, green: 0.173969686, blue: 0.3189501762, alpha: 1))]), center: .center, startRadius: /*@START_MENU_TOKEN@*/57/*@END_MENU_TOKEN@*/, endRadius: /*@START_MENU_TOKEN@*/400/*@END_MENU_TOKEN@*/)
+                    .ignoresSafeArea()
                 
-                VStack(spacing: 20) {
-                    ProgressView(value: health) {
-                        Text("Label")
-                    } currentValueLabel: {
-                        Text("Current Value Label: \(health)")
-                    }
-                    Text("Current Value Label: \(health)")
-                    .frame(width: 300, height: 20)
-                    
-                }
-                .progressViewStyle(.linear)
-                .tint(.pink)
-                .padding()
-                .offset(y:-200)
                 
-                VStack {
-                    Spacer()
-                    Image(systemName: "star.fill")
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .foregroundStyle(.yellow)
-                        .opacity(0.5)
-                }
+                 VStack(spacing: 20) {
+                 ProgressView(value: health) {
+                 Text("Label")
+                 } currentValueLabel: {
+                 Text("Current Value Label: \(health)")
+                 }
+                 Text("Current Value Label: \(health)")
+                 .frame(width: 300, height: 20)
+                 
+                 }
+                 
+                    .progressViewStyle(.linear)
+                    .tint(.pink)
+                    .padding()
+                    .offset(y:-200)
+                 
                 
-                Image("alien1")
+                
+                Image("starsbackground")
+                    .offset(y: -120)
+                
+                Image("hearthexport")
                     .resizable()
-                    .frame(width: 300,height: 350)
-                    .shadow(radius: 5, y: 10)
                     .offset(y: 40)
+                    .scaledToFit()
+                    .padding(.bottom)
+                    .offset(y: 350)
+                    .frame(width: 850)
                 
+                Image("babyalienmain")
+                    .resizable()
+                    .scaledToFit()
+                    .padding(.bottom)
+                    .frame(width: 200)
+                    .offset(y: 100)
+                
+           
             }
             .dropDestination(for: Drink.self){ items,location in
                 drink = items.first!

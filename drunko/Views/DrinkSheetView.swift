@@ -61,7 +61,7 @@ struct DrinkSheetView: View {
             .tabViewStyle(.page)
             .frame(height: 365)
             VStack{
-                Text("Drag and drop the drink to give it to the mascott")
+                Text("Drag and drop the drink to give it to Henry")
                     .padding(.bottom, 5)
                 Text("Hold on the drinks to view the details")
             }
