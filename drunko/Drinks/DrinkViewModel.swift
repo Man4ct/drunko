@@ -48,7 +48,7 @@ let juiceDrink = Drink(
 
 let coffeeDrink = Drink(
     name: "Coffee",
-    imageName: "drink",
+    imageName: "coffeeImage",
     type: .COFFEE,
     negativeHealth: -10, // Decreases pet's health when consumed
     positiveHealth: 5,   // Increases pet's health when consumed in moderation
@@ -91,8 +91,8 @@ let milkDrink = Drink(
 )
 
 let teaDrink = Drink(
-    name: "Green Tea",
-    imageName: "greenTeaImage",
+    name: "Tea",
+    imageName: "teaImage",
     type: .TEA,
     negativeHealth: -10, // Decreases pet's health when consumed
     positiveHealth: 5,   // Increases pet's health when consumed in moderation
@@ -112,10 +112,10 @@ let teaDrink = Drink(
     ]
 )
 
-let vegetableSmoothieDrink = Drink(
-    name: "Vegetable Smoothie",
-    imageName: "vegetableSmoothieImage",
-    type: .VEGETABLE_SMOOTHIE,
+let colaDrink = Drink(
+    name: "Cola",
+    imageName: "colaImage",
+    type: .SUGARY,
     negativeHealth: -10, // Decreases pet's health when consumed
     positiveHealth: 5,   // Increases pet's health when consumed in moderation
     positiveResponse: [
@@ -174,4 +174,4 @@ let strongAlcoholDrink = Drink(
     ]
 )
 
-let drinkList: [Drink] = [waterDrink, coffeeDrink, teaDrink, milkDrink, juiceDrink, vegetableSmoothieDrink, softAlcoholDrink, strongAlcoholDrink]
+let drinkList: [Drink] = [waterDrink, coffeeDrink, teaDrink, milkDrink, juiceDrink, colaDrink, softAlcoholDrink, strongAlcoholDrink]
