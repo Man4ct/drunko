@@ -33,7 +33,7 @@ struct AchievementView: View {
                 }
             }
         }
-        .tabViewStyle(.page)
+        .tabViewStyle(.page(indexDisplayMode: .never))
         .frame(height: 290)
         
     }
