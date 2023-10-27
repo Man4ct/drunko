@@ -12,6 +12,7 @@ struct AlienView: View {
     @State private var drink: Drink = coffeeDrink
     @AppStorage("counterFirstDrink") var counterFirstDrink = DefaultCounters.counterFirstDrink
     @AppStorage("counterFiveDrink") var counterFiveDrink = DefaultCounters.counterFiveDrink
+    @AppStorage("counterCoffee") var counterCoffee = DefaultCounters.counterCoffee
     
     var body: some View {
         NavigationStack {
@@ -37,11 +38,15 @@ struct AlienView: View {
             .dropDestination(for: Drink.self){ items,location in
                 drink = items.first!
                 
+                print(drink)
                 if(counterFirstDrink == 0) {
                     counterFirstDrink = 1
                 }
                 if(counterFiveDrink < 5) {
                     counterFiveDrink += 1
+                }
+                if(drink.name == "Coffee" && counterCoffee != 1 ) {
+                    counterCoffee = 1
                 }
                 isShowingCupSheet = false
                 return true
