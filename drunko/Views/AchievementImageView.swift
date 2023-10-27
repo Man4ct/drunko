@@ -30,7 +30,7 @@ struct AchievementImageView: View {
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .padding(.bottom, 30)
-        } else if (achievement.type == .FIVEDRINK && achievement.counterEnd == counterCoffee) {
+        } else if (achievement.type == .COFFEE && achievement.counterEnd == counterCoffee) {
             Image(achievement.imageName)
                 .resizable()
                 .aspectRatio(contentMode: .fit)
