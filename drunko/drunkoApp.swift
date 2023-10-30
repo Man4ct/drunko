@@ -20,7 +20,10 @@ struct drunkoApp: App {
             }
         }
         if(!userDefaultKeyExist(key: "health")){
-            UserDefaults.standard.setValue(25.0, forKey: "health")
+            UserDefaults.standard.setValue(10.0, forKey: "health")
+        }
+        if(!userDefaultKeyExist(key: "level")){
+            UserDefaults.standard.setValue(1, forKey: "level")
         }
     }
     
