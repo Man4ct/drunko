@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct SheetButton<Content: View>: View {
+struct SheetButtonName<Content: View>: View {
     
     var systemName: String
     @ViewBuilder var content: () -> Content
