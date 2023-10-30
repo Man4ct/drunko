@@ -19,15 +19,19 @@ struct OnboardingTabView: View {
             ShapeShipView()
                 .tag(0)
             
-            BabyAlienSitting()
+            ShipRay()
                 .tag(1)
             
-            OnboardingTabView()
+            ConfusedAlienView()
                 .tag(2)
+            
+            BabyAlienSitting()
+                .tag(3)
         }
         )
         .tabViewStyle(PageTabViewStyle())
         .indexViewStyle(PageIndexViewStyle(backgroundDisplayMode: .always))
+        .ignoresSafeArea()
         
         
         

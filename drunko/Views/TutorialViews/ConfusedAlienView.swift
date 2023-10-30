@@ -8,6 +8,9 @@ import SwiftUI
 import UIKit
 
 struct ConfusedAlienView: View {
+    
+    
+    
     var body: some View {
         VStack{
             ZStack{
@@ -15,21 +18,31 @@ struct ConfusedAlienView: View {
                     .ignoresSafeArea()
                
                 Image("moon")
-                    .offset(x: -130, y: -350)
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 300)
+                    .offset(x: -130, y: -390)
                 
                 Image("starsbackground")
                     .offset(y: -120)
                   
                 
-                Image("hearthexport")
+                Image("heartimagedef")
                     .resizable()
                     .scaledToFit()
                     .padding(.bottom)
-                    .offset(y: 300)
+                    .offset(y: 480)
                     .frame(width: 850)
-    
+                
+                Image("emptyspaceship")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 120)
+                    .offset(x: -135, y: 130)
+                    .rotationEffect(.degrees(-3))
                 
                 Image("babyalienrunning")
+                    .offset(y: 110)
                 
                 
                    

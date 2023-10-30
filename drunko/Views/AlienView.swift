@@ -10,6 +10,7 @@ struct AlienView: View {
     @State private var isShowingCupSheet = false
     @State private var isShowingTrophySheet = false
     @State private var drink: Drink = coffeeDrink
+    
     @AppStorage("counterFirstDrink") var counterFirstDrink = DefaultCounters.counterFirstDrink
     @AppStorage("counterFiveDrink") var counterFiveDrink = DefaultCounters.counterFiveDrink
     @AppStorage("counterCoffee") var counterCoffee = DefaultCounters.counterCoffee
@@ -18,27 +19,29 @@ struct AlienView: View {
     
     var body: some View {
         NavigationStack {
+            
+            
             ZStack{
-                RadialGradient(gradient: Gradient(colors: [Color(#colorLiteral(red: 0.6030268073, green: 0.6080136299, blue: 0.8535711169, alpha: 1)), Color(#colorLiteral(red: 0.2372646034, green: 0.173969686, blue: 0.3189501762, alpha: 1))]), center: .center, startRadius: /*@START_MENU_TOKEN@*/57/*@END_MENU_TOKEN@*/, endRadius: /*@START_MENU_TOKEN@*/400/*@END_MENU_TOKEN@*/)
+                
+                RadialGradient(gradient: Gradient(colors: [Color(#colorLiteral(red: 0.6030268073, green: 0.6080136299, blue: 0.8535711169, alpha: 1)), Color(#colorLiteral(red: 0.2372646034, green: 0.173969686, blue: 0.3189501762, alpha: 1))]), center: .center, startRadius: 57/*@END_MENU_TOKEN@*/, endRadius: /*@START_MENU_TOKEN@*/400)
                     .ignoresSafeArea()
                 
                 
-                 VStack(spacing: 20) {
-                 ProgressView(value: health) {
-                 Text("Label")
-                 } currentValueLabel: {
-                 Text("Current Value Label: \(health)")
-                 }
-                 Text("Current Value Label: \(health)")
-                 .frame(width: 300, height: 20)
-                 
-                 }
-                 
-                    .progressViewStyle(.linear)
-                    .tint(.pink)
-                    .padding()
-                    .offset(y:-200)
-                 
+                VStack(spacing: 20) {
+                    ProgressView(value: health) {
+                        Text("Label")
+                    } currentValueLabel: {
+                        Text("Current Value Label: \(health)")
+                    }
+                    Text("Current Value Label: \(health)")
+                        .frame(width: 300, height: 20)
+                    
+                }
+                
+                .progressViewStyle(.linear)
+                .tint(.pink)
+                .padding()
+                .offset(y:-200)
                 
                 
                 Image("starsbackground")
@@ -59,7 +62,7 @@ struct AlienView: View {
                     .frame(width: 200)
                     .offset(y: 100)
                 
-           
+
             }
             .dropDestination(for: Drink.self){ items,location in
                 drink = items.first!
@@ -91,7 +94,8 @@ struct AlienView: View {
                     }, isShowingSheet: $isShowingTrophySheet)
                 }
             }
-        }
+            
+        }//end of navigation stack
     }
 }
 
