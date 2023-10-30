@@ -11,6 +11,7 @@ struct AlienView: View {
     @State private var isShowingTrophySheet = false
     
     @State private var drink: Drink = coffeeDrink
+    
     @AppStorage("counterFirstDrink") var counterFirstDrink = DefaultCounters.counterFirstDrink
     @AppStorage("counterFiveDrink") var counterFiveDrink = DefaultCounters.counterFiveDrink
     @AppStorage("counterCoffee") var counterCoffee = DefaultCounters.counterCoffee
@@ -21,7 +22,10 @@ struct AlienView: View {
     
     var body: some View {
         NavigationStack {
+            
+            
             ZStack{
+
                 AlienBackgroundView()
                 
                 VStack(alignment: .leading) {
@@ -68,7 +72,27 @@ struct AlienView: View {
                 .frame(width: 300)
                 .padding()
                 .offset(y:-200)
+                                
                 
+                Image("starsbackground")
+                    .offset(y: -120)
+                
+                Image("hearthexport")
+                    .resizable()
+                    .offset(y: 40)
+                    .scaledToFit()
+                    .padding(.bottom)
+                    .offset(y: 350)
+                    .frame(width: 850)
+                
+                Image("babyalienmain")
+                    .resizable()
+                    .scaledToFit()
+                    .padding(.bottom)
+                    .frame(width: 200)
+                    .offset(y: 100)
+                
+
                 Rectangle()
                     .frame(height: 100)
                     .opacity(0.3)
@@ -120,7 +144,8 @@ struct AlienView: View {
                     Spacer()
                 }
             }
-        }
+            
+        }//end of navigation stack
     }
 }
 
