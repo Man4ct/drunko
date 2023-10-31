@@ -22,6 +22,11 @@ struct BabyAlienSitting: View {
                         .frame(width: 300)
                         .offset(x: -130, y: -390)
 
+                    Image("dualogoquattro")
+                         .resizable()
+                         .scaledToFit()
+                         .frame(width: 250)
+                         .offset(y: -120)
                     
                     Image("starsbackground")
                         .offset(y: -120)
