@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		540826EA2AEBFD9E007BA23A /* AlienBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540826E92AEBFD9E007BA23A /* AlienBackgroundView.swift */; };
 		548810862AE75796001D09F0 /* DrinkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548810852AE75796001D09F0 /* DrinkModel.swift */; };
 		548810882AE762EC001D09F0 /* DrinkViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548810872AE762EC001D09F0 /* DrinkViewModel.swift */; };
 		5488108B2AE967D4001D09F0 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5488108A2AE967D4001D09F0 /* Utils.swift */; };
@@ -22,6 +21,7 @@
 		587360A32ADEC91300A05D03 /* AlienView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587360A22ADEC91300A05D03 /* AlienView.swift */; };
 		587360A52ADEC91400A05D03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 587360A42ADEC91400A05D03 /* Assets.xcassets */; };
 		587360A82ADEC91400A05D03 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 587360A72ADEC91400A05D03 /* Preview Assets.xcassets */; };
+		587360C32AE0360C00A05D03 /* EmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587360C22AE0360C00A05D03 /* EmptyView.swift */; };
 		589488C72AEAA21A00765D4E /* DefaultCounters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589488C62AEAA21A00765D4E /* DefaultCounters.swift */; };
 		58BE9F8F2AE182600015D9DB /* DrinkSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58BE9F8E2AE182600015D9DB /* DrinkSheetView.swift */; };
 		6F17AB512AEA999200B5DFA8 /* ShapeShipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F17AB502AEA999200B5DFA8 /* ShapeShipView.swift */; };
@@ -32,7 +32,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		540826E92AEBFD9E007BA23A /* AlienBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlienBackgroundView.swift; sourceTree = "<group>"; };
 		548810852AE75796001D09F0 /* DrinkModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkModel.swift; sourceTree = "<group>"; };
 		548810872AE762EC001D09F0 /* DrinkViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkViewModel.swift; sourceTree = "<group>"; };
 		548810892AE77317001D09F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +48,7 @@
 		587360A22ADEC91300A05D03 /* AlienView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlienView.swift; sourceTree = "<group>"; };
 		587360A42ADEC91400A05D03 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		587360A72ADEC91400A05D03 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		587360C22AE0360C00A05D03 /* EmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyView.swift; sourceTree = "<group>"; };
 		589488C62AEAA21A00765D4E /* DefaultCounters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultCounters.swift; sourceTree = "<group>"; };
 		58BE9F8E2AE182600015D9DB /* DrinkSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkSheetView.swift; sourceTree = "<group>"; };
 		6F17AB502AEA999200B5DFA8 /* ShapeShipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeShipView.swift; sourceTree = "<group>"; };
@@ -125,8 +125,8 @@
 			children = (
 				6F17AB4F2AEA997000B5DFA8 /* TutorialViews */,
 				587360A22ADEC91300A05D03 /* AlienView.swift */,
-				540826E92AEBFD9E007BA23A /* AlienBackgroundView.swift */,
 				58BE9F8E2AE182600015D9DB /* DrinkSheetView.swift */,
+				587360C22AE0360C00A05D03 /* EmptyView.swift */,
 				584A9EA82AE2B3BA0095A369 /* SheetButton.swift */,
 				58708F6B2AEBE91000FCB0A1 /* AchievementProgressView.swift */,
 				584294942AE80E5300589520 /* AchievementView.swift */,
@@ -232,12 +232,12 @@
 				584A9EA92AE2B3BA0095A369 /* SheetButton.swift in Sources */,
 				5488108B2AE967D4001D09F0 /* Utils.swift in Sources */,
 				548810862AE75796001D09F0 /* DrinkModel.swift in Sources */,
+				587360C32AE0360C00A05D03 /* EmptyView.swift in Sources */,
 				548810882AE762EC001D09F0 /* DrinkViewModel.swift in Sources */,
 				58BE9F8F2AE182600015D9DB /* DrinkSheetView.swift in Sources */,
 				589488C72AEAA21A00765D4E /* DefaultCounters.swift in Sources */,
 				584A9EAB2AE2C1220095A369 /* NotificationUtility.swift in Sources */,
 				6FE4C8F62AEBC6CE009B71FA /* OnboardingTabView.swift in Sources */,
-				540826EA2AEBFD9E007BA23A /* AlienBackgroundView.swift in Sources */,
 				6F62B4802AEBEF5C0011D5F8 /* OnBoardingData.swift in Sources */,
 				6F17AB532AEAB04600B5DFA8 /* ConfusedAlienView.swift in Sources */,
 				6F993C6F2AEBB344005FF111 /* BabyAlienSitting.swift in Sources */,

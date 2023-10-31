@@ -18,17 +18,7 @@ struct SheetButton<Content: View>: View {
         Button {
             isShowingSheet.toggle()
         } label: {
-            if(systemName == "cup.and.saucer.fill"){
-                Image(systemName: systemName)
-                    .resizable()
-                    .frame(width: 40, height: 35)
-                    .offset(y: 8)
-            }else{
-                Image(systemName: systemName)
-                    .resizable()
-                    .frame(width: 40, height: 40)
-                    .offset(y: 8)
-            }
+            Image(systemName: systemName)
         }
         .sheet(isPresented: $isShowingSheet, content: {
             content()
