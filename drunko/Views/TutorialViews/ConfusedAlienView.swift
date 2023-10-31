@@ -25,6 +25,13 @@ struct ConfusedAlienView: View {
                 
                 Image("starsbackground")
                     .offset(y: -120)
+                
+                
+                Image("dialogotre")
+                     .resizable()
+                     .scaledToFit()
+                     .frame(width: 250)
+                     .offset(y: -120)
                   
                 
                 Image("heartimagedef")
