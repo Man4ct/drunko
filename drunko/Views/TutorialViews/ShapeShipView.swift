@@ -32,7 +32,12 @@ struct ShapeShipView: View {
 //                        animateSpaceship()
 //                                     }
                 
-
+               Image("dialogouno")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 250)
+                
+                
                 
                 Image("moon")
                     .resizable()
@@ -42,11 +47,7 @@ struct ShapeShipView: View {
                 
                 Image("starsbackground")
                     .offset(y: -120)
-                
-                Image("dialogueonewhite")
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 300)
+
                    
                 
                 Image("heartimagedef")

@@ -18,9 +18,12 @@ struct ShipRay: View {
                     .resizable()
                     .scaledToFit()
                     .frame(width: 300)
-                    .offset(y: 50)
-                   // .scaleEffect(isAnimating ? 1 : 0.9)
-
+                    .offset(y: 0)
+                  
+                Image("dialogodue")
+                     .resizable()
+                     .scaledToFit()
+                     .frame(width: 250)
                 
                 Image("moon")
                     .resizable()

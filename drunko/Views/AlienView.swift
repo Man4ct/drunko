@@ -26,7 +26,7 @@ struct AlienView: View {
     
     var body: some View {
         NavigationStack {
-            
+        
             
             ZStack{
                 AlienBackgroundView()
