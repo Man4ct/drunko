@@ -23,7 +23,8 @@ let waterDrink = Drink(
         "I think I've had enough water for now.",
         "This water is a bit too cold for my liking.",
         "I'd rather have something with more flavor."
-    ]
+    ],
+    description: "The most basic drink."
 )
 
 let juiceDrink = Drink(
@@ -43,7 +44,8 @@ let juiceDrink = Drink(
         "This juice is a bit too sour for my taste.",
         "I prefer a different flavor of juice.",
         "I think I'd rather have something else."
-    ]
+    ],
+    description: "Tasty and full of vitamis!"
 )
 
 let coffeeDrink = Drink(
@@ -65,7 +67,8 @@ let coffeeDrink = Drink(
         "My heart is racing, this coffee was too strong!",
         "I'm feeling jittery, maybe less coffee next time?",
         "This coffee is way too bitter for my taste."
-    ]
+    ],
+    description: "Max energy but beware of caffeine!"
 )
 
 let milkDrink = Drink(
@@ -87,7 +90,8 @@ let milkDrink = Drink(
         "This milk tastes a little off, maybe it's expired?",
         "I spilled the milk, and now it's a mess!",
         "I'm not a fan of plain milk, got any chocolate syrup?"
-    ]
+    ],
+    description: "Plain white milk."
 
 )
 
@@ -110,7 +114,8 @@ let teaDrink = Drink(
         "My tea is too bitter, could you add some sugar next time?",
         "I'm not a fan of this flavor. It's too strong for me.",
         "This tea is too weak and tasteless for my liking."
-    ]
+    ],
+    description: "A hot cup of tea!"
 
 )
 
@@ -133,7 +138,8 @@ let colaDrink = Drink(
         "My teeth are tingling, this cola is too sweet!",
         "I'm feeling bloated after all that fizz!",
         "I'm not a fan of cola, it's too carbonated for me."
-    ]
+    ],
+    description: "Fresh and bubbly, but sugary."
 
 )
 
@@ -156,7 +162,8 @@ let softAlcoholDrink = Drink(
         "This Midori is too sweet, and it's making me dizzy.",
         "I'm feeling a bit tipsy, maybe I should stop drinking.",
         "I don't like the taste of alcohol, it's too bitter for me."
-    ]
+    ],
+    description: "A refreshing alcoholic drink."
 
 )
 
@@ -179,7 +186,8 @@ let strongAlcoholDrink = Drink(
         "This Negroni is too bitter for my taste, can I have something else?",
         "I'm feeling a bit woozy, maybe I should stop drinking.",
         "I'm not a fan of the strong taste of Negroni, it's too intense for me."
-    ]
+    ],
+    description: "A strong alcoholing drink."
 
 )
 

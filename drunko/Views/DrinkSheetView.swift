@@ -92,7 +92,7 @@ struct DrinkSheetView: View {
                                     .font(.title)
                                     .padding(.bottom, 1)
                                     .foregroundStyle(colorScheme == .dark ? .white : .black)
-                                Text("La bevanda alla \nbase della vita")
+                                Text(drink.description)
                                     .font(.body)
                             }
                         }
