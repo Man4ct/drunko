@@ -30,6 +30,7 @@ struct Drink: Identifiable, Codable, Hashable, Transferable{
     var positiveHealth: Int
     var positiveResponse: [String]
     var negativeResponse: [String]
+    var description: String
 
     static var transferRepresentation: some TransferRepresentation {
         CodableRepresentation(contentType: .drink)
