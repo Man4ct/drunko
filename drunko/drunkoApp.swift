@@ -25,6 +25,12 @@ struct drunkoApp: App {
         if(!userDefaultKeyExist(key: "level")){
             UserDefaults.standard.setValue(1, forKey: "level")
         }
+        if(!userDefaultKeyExist(key: "drink1")){
+            UserDefaults.standard.setValue("nodrink", forKey: "drink1")
+        }
+        if(!userDefaultKeyExist(key: "drink2")){
+            UserDefaults.standard.setValue("nodrink", forKey: "drink2")
+        }
     }
     
     var body: some Scene {
