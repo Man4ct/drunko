@@ -12,4 +12,7 @@ enum DefaultCounters {
     static let counterFirstTutorial = 0.0
     static let counterFiveDrink = 0.0
     static let counterCoffee = 0.0
+    static let counterSameDrink = 0
+    static let counterTotalDrink = 0
+    static let currentDrink = ""
 }

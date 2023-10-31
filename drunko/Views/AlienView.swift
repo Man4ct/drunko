@@ -9,13 +9,15 @@ import SwiftUI
 struct AlienView: View {
     @State private var isShowingCupSheet = false
     @State private var isShowingTrophySheet = false
-    
+    @State private var showingAlert = false
     @State private var drink: Drink = coffeeDrink
-    
+
     @AppStorage("counterFirstDrink") var counterFirstDrink = DefaultCounters.counterFirstDrink
     @AppStorage("counterFiveDrink") var counterFiveDrink = DefaultCounters.counterFiveDrink
     @AppStorage("counterCoffee") var counterCoffee = DefaultCounters.counterCoffee
-    
+    @AppStorage("counterSameDrink") var counterSameDrink = DefaultCounters.counterSameDrink
+    @AppStorage("currentDrink") var currentDrink = DefaultCounters.currentDrink
+
     @State var health: Double = UserDefaults.standard.double(forKey: "health")
     @State var level: Int = UserDefaults.standard.integer(forKey: "level")
     
@@ -116,6 +118,18 @@ struct AlienView: View {
                 }else{
                     UserDefaults.standard.setValue(health + Double(drink.positiveHealth), forKey: "health")
                 }
+                if(currentDrink == drink.name) {
+                    counterSameDrink += 1
+                } else {
+                    counterSameDrink = 0
+                }
+                
+                if (currentDrink == "" || currentDrink != drink.name) {
+                    currentDrink = drink.name
+                }
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) { // or even shorter
+                    showingAlert = true
+                }
                 
                 health = UserDefaults.standard.double(forKey: "health")
                 level = UserDefaults.standard.integer(forKey: "level")
@@ -142,6 +156,17 @@ struct AlienView: View {
                     .frame(height: 200)
                     Spacer()
                 }
+            }
+            .alert("Hey!", isPresented: $showingAlert) {
+                Button("OK", role: .cancel) { }
+                    .backgroundStyle(Color("backgroundColor"))
+            } message: {
+                if(counterSameDrink > 2) {
+                    Text(drink.negativeResponse.randomElement()!)
+                } else {
+                    Text(drink.positiveResponse.randomElement()!)
+                }
+                    
             }
             
         }//end of navigation stack
