@@ -17,20 +17,21 @@ struct BabyAlienSitting: View {
                         .ignoresSafeArea()
                     
                     Image("moon")
-                        .offset(x: -130, y: -350)
-                        
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 300)
+                        .offset(x: -130, y: -390)
 
                     
                     Image("starsbackground")
                         .offset(y: -120)
-                        
 
                     
-                    Image("hearthexport")
+                    Image("heartimagedef")
                         .resizable()
                         .scaledToFit()
                         .padding(.bottom)
-                        .offset(y: 300)
+                        .offset(y: 480)
                         .frame(width: 850)
                         
 
@@ -40,6 +41,7 @@ struct BabyAlienSitting: View {
                         .scaledToFit()
                         .padding(.bottom)
                         .frame(width: 200)
+                        .offset(y: 100)
                         
 
                 
