@@ -127,7 +127,7 @@ struct AlienView: View {
                 if (currentDrink == "" || currentDrink != drink.name) {
                     currentDrink = drink.name
                 }
-                DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) { // or even shorter
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) { // or even shorter
                     showingAlert = true
                 }
                 

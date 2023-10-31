@@ -17,8 +17,8 @@ func scheduleNotification() {
 
     // Define the time for the notification trigger (7 PM)
     var dateComponents = DateComponents()
-    dateComponents.hour = 19 // 7 PM
-    dateComponents.minute = 0 // 0 minutes
+//    dateComponents.hour = 19 // 7 PM
+    dateComponents.minute = 10 // 0 minutes
     dateComponents.second = 5 // 0 seconds
 
     // Create a daily trigger at 7 PM

@@ -75,19 +75,20 @@ let milkDrink = Drink(
     negativeHealth: -10, // Decreases pet's health when consumed
     positiveHealth: 5,   // Increases pet's health when consumed in moderation
     positiveResponse: [
-        "Mmm, this coffee is just what I needed!",
-        "I feel so energized now, thanks for the coffee!",
-        "Ah, the aroma of coffee is so inviting.",
-        "You really know how to make a great cup of coffee.",
-        "Coffee is like a warm hug in a cup."
+        "Ah, milk is so comforting and wholesome!",
+        "I love the creamy goodness of milk!",
+        "Milk is like a warm embrace from a cow!",
+        "This milk is so refreshing, thank you!",
+        "My bones will be strong with all this calcium!"
     ],
     negativeResponse: [
-        "Whoa, that's too much caffeine for me!",
-        "I think I've had enough caffeine for the day.",
-        "My heart is racing, this coffee was too strong!",
-        "I'm feeling jittery, maybe less coffee next time?",
-        "This coffee is way too bitter for my taste."
+        "Uh-oh, I'm lactose intolerant, and this milk is trouble!",
+        "I've had too much milk, and now I'm feeling a bit queasy.",
+        "This milk tastes a little off, maybe it's expired?",
+        "I spilled the milk, and now it's a mess!",
+        "I'm not a fan of plain milk, got any chocolate syrup?"
     ]
+
 )
 
 let teaDrink = Drink(
@@ -97,19 +98,20 @@ let teaDrink = Drink(
     negativeHealth: -10, // Decreases pet's health when consumed
     positiveHealth: 5,   // Increases pet's health when consumed in moderation
     positiveResponse: [
-        "Mmm, this coffee is just what I needed!",
-        "I feel so energized now, thanks for the coffee!",
-        "Ah, the aroma of coffee is so inviting.",
-        "You really know how to make a great cup of coffee.",
-        "Coffee is like a warm hug in a cup."
+        "Ah, tea is so soothing and delightful!",
+        "I feel so relaxed now, thanks for the tea!",
+        "The aroma of this tea is incredibly calming.",
+        "You really know how to make a perfect cup of tea.",
+        "Tea is like a warm hug in a cup."
     ],
     negativeResponse: [
-        "Whoa, that's too much caffeine for me!",
-        "I think I've had enough caffeine for the day.",
-        "My heart is racing, this coffee was too strong!",
-        "I'm feeling jittery, maybe less coffee next time?",
-        "This coffee is way too bitter for my taste."
+        "Whoa, that's too hot for me! I burnt my tongue.",
+        "I think I've had enough caffeine for the day with this tea.",
+        "My tea is too bitter, could you add some sugar next time?",
+        "I'm not a fan of this flavor. It's too strong for me.",
+        "This tea is too weak and tasteless for my liking."
     ]
+
 )
 
 let colaDrink = Drink(
@@ -119,19 +121,20 @@ let colaDrink = Drink(
     negativeHealth: -10, // Decreases pet's health when consumed
     positiveHealth: 5,   // Increases pet's health when consumed in moderation
     positiveResponse: [
-        "Mmm, this coffee is just what I needed!",
-        "I feel so energized now, thanks for the coffee!",
-        "Ah, the aroma of coffee is so inviting.",
-        "You really know how to make a great cup of coffee.",
-        "Coffee is like a warm hug in a cup."
+        "Mmm, this cola is so refreshing and bubbly!",
+        "I love the fizzy goodness of cola!",
+        "Cola is like a party in a can!",
+        "This cola is so invigorating, thank you!",
+        "I can't resist the sweet taste of cola!"
     ],
     negativeResponse: [
-        "Whoa, that's too much caffeine for me!",
-        "I think I've had enough caffeine for the day.",
-        "My heart is racing, this coffee was too strong!",
-        "I'm feeling jittery, maybe less coffee next time?",
-        "This coffee is way too bitter for my taste."
+        "Whoa, that's too much sugar for me!",
+        "I've had too much caffeine for the day with this cola.",
+        "My teeth are tingling, this cola is too sweet!",
+        "I'm feeling bloated after all that fizz!",
+        "I'm not a fan of cola, it's too carbonated for me."
     ]
+
 )
 
 let softAlcoholDrink = Drink(
@@ -141,17 +144,20 @@ let softAlcoholDrink = Drink(
     negativeHealth: -15, // Decreases pet's health when consumed
     positiveHealth: 5,   // Increases pet's health when consumed in moderation
     positiveResponse: [
-        "Cheers! I'm feeling relaxed now.",
-        "A little sip won't hurt. Thanks for the drink!",
-        "This drink has a nice kick to it. Cheers!",
-        "I'm enjoying the flavor of this alcohol."
+        "Cheers! Midori is a vibrant and delightful drink!",
+        "I'm feeling festive with this Midori in hand!",
+        "The vibrant green color of Midori is so appealing.",
+        "This Midori cocktail is delicious, thank you!",
+        "Midori is like a taste of paradise in a glass!"
     ],
     negativeResponse: [
-        "I'm feeling dizzy, that was too much alcohol.",
-        "I think I've had enough alcohol for now.",
-        "I'm not a fan of this alcohol's taste.",
-        "I'm not in the mood for alcohol today."
+        "Whoa, that's too strong for me!",
+        "I've had enough alcohol for the day, I should slow down.",
+        "This Midori is too sweet, and it's making me dizzy.",
+        "I'm feeling a bit tipsy, maybe I should stop drinking.",
+        "I don't like the taste of alcohol, it's too bitter for me."
     ]
+
 )
 
 let strongAlcoholDrink = Drink(
@@ -161,17 +167,20 @@ let strongAlcoholDrink = Drink(
     negativeHealth: -20, // Decreases pet's health when consumed
     positiveHealth: 2,   // Increases pet's health when consumed in moderation
     positiveResponse: [
-        "Cheers! I'm feeling relaxed now.",
-        "A little sip won't hurt. Thanks for the drink!",
-        "This drink has a nice kick to it. Cheers!",
-        "I'm enjoying the flavor of this alcohol."
+        "Cheers! Negroni is a bold and sophisticated choice!",
+        "I'm feeling quite adventurous with this Negroni!",
+        "The complex flavors of Negroni are intriguing and delightful.",
+        "This Negroni is a masterpiece, thank you!",
+        "Negroni is like a journey through a mix of flavors!"
     ],
     negativeResponse: [
-        "I'm feeling dizzy, that was too much alcohol.",
-        "I think I've had enough alcohol for now.",
-        "I'm not a fan of this alcohol's taste.",
-        "I'm not in the mood for alcohol today."
+        "Whoa, that's too strong for me! It packs a punch.",
+        "I've had enough alcohol for the day, I should take it easy.",
+        "This Negroni is too bitter for my taste, can I have something else?",
+        "I'm feeling a bit woozy, maybe I should stop drinking.",
+        "I'm not a fan of the strong taste of Negroni, it's too intense for me."
     ]
+
 )
 
 let drinkList: [Drink] = [waterDrink, coffeeDrink, teaDrink, milkDrink, juiceDrink, colaDrink, softAlcoholDrink, strongAlcoholDrink]
