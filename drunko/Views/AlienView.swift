@@ -25,7 +25,6 @@ struct AlienView: View {
             
             
             ZStack{
-
                 AlienBackgroundView()
                 
                 VStack(alignment: .leading) {
@@ -38,9 +37,9 @@ struct AlienView: View {
                             .resizable()
                             .frame(width: 100, height: 100)
                             .foregroundColor(Color(hue: 0.148, saturation: 0.437, brightness: 0.624))
-                            .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/.stroke(lineWidth: 30))
+                            .clipShape(Circle().stroke(lineWidth: 30))
                             .background(Color(hue: 0.148, saturation: 0.418, brightness: 0.471))
-                            .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
+                            .clipShape(Circle())
                             .shadow(radius: 10)
                         ZStack{
                             RoundedRectangle(cornerRadius: 5.0)
@@ -72,27 +71,27 @@ struct AlienView: View {
                 .frame(width: 300)
                 .padding()
                 .offset(y:-200)
-                                
                 
-                Image("starsbackground")
-                    .offset(y: -120)
+                //                
+                //                Image("starsbackground")
+                //                    .offset(y: -120)
+                //                
+                //                Image("heartimagedef")
+                //                    .resizable()
+                //                    .offset(y: 40)
+                //                    .scaledToFit()
+                //                    .padding(.bottom)
+                //                    .offset(y: 350)
+                //                    .frame(width: 850)
+                //                
+                //                Image("babyalienmain")
+                //                    .resizable()
+                //                    .scaledToFit()
+                //                    .padding(.bottom)
+                //                    .frame(width: 200)
+                //                    .offset(y: 100)
                 
-                Image("hearthexport")
-                    .resizable()
-                    .offset(y: 40)
-                    .scaledToFit()
-                    .padding(.bottom)
-                    .offset(y: 350)
-                    .frame(width: 850)
                 
-                Image("babyalienmain")
-                    .resizable()
-                    .scaledToFit()
-                    .padding(.bottom)
-                    .frame(width: 200)
-                    .offset(y: 100)
-                
-
                 Rectangle()
                     .frame(height: 100)
                     .opacity(0.3)
