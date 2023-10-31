@@ -20,6 +20,8 @@ struct AlienView: View {
 
     @State var health: Double = UserDefaults.standard.double(forKey: "health")
     @State var level: Int = UserDefaults.standard.integer(forKey: "level")
+    @State var drink1: String = (UserDefaults.standard.string(forKey: "drink1") ?? "nodrink")
+    @State var drink2: String = (UserDefaults.standard.string(forKey: "drink2") ?? "nodrink")
     
     
     var body: some View {
@@ -73,27 +75,7 @@ struct AlienView: View {
                 .frame(width: 300)
                 .padding()
                 .offset(y:-200)
-                
-                //                
-                //                Image("starsbackground")
-                //                    .offset(y: -120)
-                //                
-                //                Image("heartimagedef")
-                //                    .resizable()
-                //                    .offset(y: 40)
-                //                    .scaledToFit()
-                //                    .padding(.bottom)
-                //                    .offset(y: 350)
-                //                    .frame(width: 850)
-                //                
-                //                Image("babyalienmain")
-                //                    .resizable()
-                //                    .scaledToFit()
-                //                    .padding(.bottom)
-                //                    .frame(width: 200)
-                //                    .offset(y: 100)
-                
-                
+            
                 Rectangle()
                     .frame(height: 100)
                     .opacity(0.3)
@@ -112,12 +94,22 @@ struct AlienView: View {
                     counterCoffee = 1
                 }
                 
-                if(health + Double(drink.positiveHealth) >= 50){
-                    UserDefaults.standard.setValue(0.0, forKey: "health")
-                    UserDefaults.standard.setValue(level+1, forKey: "level")
+                if(drink.name == drink1 && drink.name == drink2){
+                    UserDefaults.standard.setValue(health + Double(drink.negativeHealth), forKey: "health")
                 }else{
-                    UserDefaults.standard.setValue(health + Double(drink.positiveHealth), forKey: "health")
+                    if(health + Double(drink.positiveHealth) >= 50){
+                        UserDefaults.standard.setValue(0.0, forKey: "health")
+                        UserDefaults.standard.setValue(level+1, forKey: "level")
+                    }else{
+                        UserDefaults.standard.setValue(health + Double(drink.positiveHealth), forKey: "health")
+                    }
                 }
+                
+                UserDefaults.standard.setValue(drink1, forKey: "drink2")
+                drink2 = drink1
+                UserDefaults.standard.setValue(drink.name, forKey: "drink1")
+                drink1 = drink.name
+                
                 if(currentDrink == drink.name) {
                     counterSameDrink += 1
                 } else {
@@ -161,7 +153,7 @@ struct AlienView: View {
                 Button("OK", role: .cancel) { }
                     .backgroundStyle(Color("backgroundColor"))
             } message: {
-                if(counterSameDrink > 2) {
+                if(counterSameDrink >= 2) {
                     Text(drink.negativeResponse.randomElement()!)
                 } else {
                     Text(drink.positiveResponse.randomElement()!)
