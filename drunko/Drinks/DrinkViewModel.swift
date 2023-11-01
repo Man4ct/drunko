@@ -7,26 +7,6 @@
 
 import Foundation
 
-let waterDrink = Drink(
-    name: "Water",
-    imageName: "waterImage",
-    type: .WATER,
-    negativeHealth: -2,  // Decreases pet's health when consumed in excess
-    positiveHealth: 8,   // Increases pet's health when consumed
-    positiveResponse: [
-        "Hydration is key! Thanks for the water.",
-        "I'm feeling refreshed and hydrated now.",
-        "Water is always a good choice for me."
-    ],
-    negativeResponse: [
-        "I'm not really thirsty right now.",
-        "I think I've had enough water for now.",
-        "This water is a bit too cold for my liking.",
-        "I'd rather have something with more flavor."
-    ],
-    description: "The most basic drink."
-)
-
 let juiceDrink = Drink(
     name: "Orange Juice",
     imageName: "orangeJuiceImage",
@@ -191,4 +171,4 @@ let strongAlcoholDrink = Drink(
 
 )
 
-let drinkList: [Drink] = [waterDrink, coffeeDrink, teaDrink, milkDrink, juiceDrink, colaDrink, softAlcoholDrink, strongAlcoholDrink]
+let drinkList: [Drink] = [coffeeDrink, teaDrink, milkDrink, juiceDrink, colaDrink, softAlcoholDrink, strongAlcoholDrink]
