@@ -11,7 +11,7 @@ import UserNotifications
 func scheduleNotification() {
     // Content of the notification
     let content = UNMutableNotificationContent()
-    content.title = "Drunko"
+    content.title = "SpaceSIP"
     content.subtitle = "I'm Thirsty 🥺"
     content.sound = UNNotificationSound.default
 
