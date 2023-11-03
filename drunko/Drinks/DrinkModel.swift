@@ -13,7 +13,6 @@ enum DrinkType: Codable{
     case SOFT_ALCOHOL
     case STRONG_ALCOHOL
     case COFFEE
-    case WATER
     case FRUIT_JUICE
     case SUGARY
     case MILK
